@@ -23,12 +23,12 @@ def save_descriptions(descriptions, output_file):
             f.write(description + '\n')
 
 def main(input_file, output_file):
-    """Основная функция для работы программы."""
+    """Основная функция для обработки данных."""
     data = load_data(input_file)
     descriptions = parse_data(data)
     save_descriptions(descriptions, output_file)
 
 # Пример использования
-input_csv = 'web_clients_correct.csv'  # Путь к входному CSV файлу
-output_txt = 'descriptions.txt'          # Путь к выходному TXT файлу
+input_csv = '/home/rnaneru/Документы/учёба/dz8/web_clients_correct.csv'  # Полный путь к входному CSV файлу
+output_txt = '/home/rnaneru/Документы/учёба/dz8/descriptions.txt'          # Полный путь к выходному TXT файлу
 main(input_csv, output_txt)
